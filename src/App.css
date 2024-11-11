@@ -1,0 +1,151 @@
+#root {
+  margin: 0 auto;
+  padding: 24px;
+  text-align: center;
+}
+
+.background {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+    linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+  background-size: 12px 24px;
+  mask-image: radial-gradient(
+    ellipse 60% 50% at 50% 0%,
+    #000 70%,
+    transparent 100%
+  );
+}
+
+main,
+section {
+  position: relative;
+
+  @media (min-width: 768px) {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  line-height: 1;
+  text-align: left;
+}
+
+h3 {
+  color: #e1e3ea;
+  @media (min-width: 768px) {
+    font-size: 1.8rem;
+    line-height: 1;
+    margin: 0;
+  }
+}
+
+.presentation {
+  padding-top: 20px; 
+  padding-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  @media (min-width: 768px) {
+    padding-top: 40px; 
+  }
+}
+
+.presentation img{
+  margin: 10px;
+  width: 150px;
+  margin-bottom: 3rem;
+  border-radius: 50px;
+}
+
+.presentation p {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.presentation__underline {
+  text-decoration-line: underline;
+  text-decoration-color: #6366f1;
+}
+
+.social {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.social__nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.social__link {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #94a3b8;
+
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.social__link:hover {
+  color: #818cf8;
+  border: 1px solid #818cf8;
+}
+
+.social__link--icon {
+  margin-right: 0.5rem;
+}
+
+.about {
+  padding-bottom: 80px;
+}
+.about p {
+  color: #e9e9e9;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-align: left;
+}
+
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  z-index: 7;
+  margin-left: 20px;
+  transition: transform 1s ease-in-out;
+  transform: translateX(110%);
+}
+
+.alert.show {
+  transform: translateX(0);
+}
+
+.footer {
+  margin-top: 4rem;
+  color: #94a3b8;
+}

@@ -1,0 +1,37 @@
+.skills {
+  padding-top: 20px;
+  padding-bottom: 50px;
+    @media (min-width: 768px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.techno {
+  display: flex;
+  align-items: center;
+  background-color: #0f172a;
+  color: #e2e8f0;
+
+  border-radius: 5px;
+  width: 100%;
+  padding: 0rem 0.5rem;
+
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.techno p {
+    margin-left: .5rem;
+}
