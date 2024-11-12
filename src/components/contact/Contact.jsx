@@ -41,6 +41,7 @@ export function Contact({ setSuccessMessage, setErrorMessage }) {
       }
 
     } catch (error) {
+      console.log(error);
       setErrorMessage(true);
         setTimeout(() => {
           setErrorMessage(false);
@@ -67,6 +68,7 @@ export function Contact({ setSuccessMessage, setErrorMessage }) {
               id="email"
               readOnly
               type="text"
+              aria-label={"email"}
               value={"fernandoituarte.dev@gmail.com"}
             />
           </article>

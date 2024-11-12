@@ -14,3 +14,4 @@ export * from './icons/ReactIcon';
 export * from './icons/Blender';
 export * from './icons/ThreeJs';
 export * from './icons/OpenAi';
+export * from './icons/LogoFI';

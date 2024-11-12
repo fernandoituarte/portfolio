@@ -39,7 +39,7 @@ export function Project(project) {
   return (
     <li className="project">
       <article className="project__image">
-        <img src={image} alt="" />
+        <img src={image} alt={`Image ${name}`} height={'350px'} width={'270px'} loading="lazy" title={`Project image ${name}`}/>
       </article>
       <div className="info">
         <article>

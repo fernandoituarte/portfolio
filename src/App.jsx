@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import { Contact, Projects, Skills } from "./components/index";
 import profile from "/profile.jpg";
+import { LogoFI } from "./components"
 import { TbCode } from "react-icons/tb";
 import { FiAtSign, FiGithub } from "react-icons/fi";
 import { LiaLinkedin } from "react-icons/lia";
@@ -32,12 +33,15 @@ function App() {
       <main>
         {/* Presentation */}
         <section id="presentation" className="presentation">
-          <img src={profile} alt="Profile image" />
+          <div className="presentation__grid">
+            <img src={profile} alt="Profile image" height={'160px'} width={'160px'} fetchpriority="high" loading="eager" title="Image profile"/>
+            <LogoFI className='logo' />
+          </div>
           <article>
-            <h2>
+            <h1>
               <TbCode size={40} />
               <span> Fernando Ituarte</span>
-            </h2>
+            </h1>
             <p>
               {
                 "Développeur web Full-Stack, avec de l'expérience en "
