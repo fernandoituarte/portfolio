@@ -12,7 +12,7 @@ export function Projects() {
       description: "PepineApp est une application e-commerce développée avec NestJS, Next.js et Redux. Elle propose une gestion de stock, les commandes sans paiement en ligne, une authentification sécurisée, ainsi que d'autres fonctionnalités pratiques pour les utilisateurs.",
       image: project1,
       technologies: ["Nextjs", "Redux", "Tailwind", "Nestjs"],
-      website: 'https://www.fernandoituarte.com',
+      website: 'https://pepine.fernandoituarte.com',
       repoBack: 'https://github.com/fernandoituarte/PepineApp-Back',
       repoFront: 'https://github.com/fernandoituarte/PepineApp-Front'
     },
